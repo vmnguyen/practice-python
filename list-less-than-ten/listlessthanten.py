@@ -18,4 +18,13 @@ print result
 '''
 
 # This code for problem Extra 2 - Write in only one line
+# Useful link to use lambda, map, filter and reduce: http://www.python-course.eu/lambda.php
+
 print (filter(lambda x: x > 5, a))
+
+
+# This code for problem Extra 3 - Ask the user for a number and return a list that contains only elements 
+# from the original list that are smaller than a number given by user 
+num = input("Give me a number: ")
+print ("List of numbers smaller than " + str(num) + " are: ")
+print (filter(lambda x: x > num, a))
