@@ -15,7 +15,12 @@ def createPassword(strong = 1):
 		for i in range(1,ranLen):
 			result = result + arr[random.randint(1,len(arr) - 11)]
 	return result
-print ("1 - Strong Password")
-print ("2 - Weak Password")
-choise = int(input("How strong do you want with your password: "))
-print (createPassword(choise%2))
+flag = True
+while flag:
+	print ("1 - Strong Password")
+	print ("2 - Weak Password")
+	choise = int(input("How strong do you want with your password: "))
+	print (createPassword(choise%2))
+	want  = input("Do you want to continue? [Y/n]")
+	if want == "n":
+		flag = False
