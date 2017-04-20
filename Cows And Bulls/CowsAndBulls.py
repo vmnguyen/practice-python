@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 #Author: bob
 import random
+def count():
+
 
 
 if __name__ =="__main__":
